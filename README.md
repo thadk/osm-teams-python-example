@@ -1,10 +1,12 @@
 # osm-teams-python-example
 
-Flask example app for https://dev.mapping.team using https://docs.authlib.org/en/latest/client/flask.html and the related `loginpass` library. Mapping Teams implements the OAuth 2 and OpenID Connect standards. The OAuth 1 transaction with OpenStreetMap.org is handled entirely by the Mapping Teams server.
+Flask example app for https://dev.mapping.team using https://docs.authlib.org/en/latest/client/flask.html and the related `loginpass` library. Mapping Teams implements the OAuth 2 and OpenID Connect standards. 
+
+The OAuth 1 transaction with OpenStreetMap.org to verify the user is handled entirely over on the Mapping Teams server. After a successful login all the way through, a `user_info` object is passed through to your app, and the OAuth 2 `token` is added.
 
 This example will use the app credentials you provide. For the users of this demo app, authentication will be verified by Mapping Teams. Then, the access key will be available which can be used as a bearer authentication header to e.g. create a new team at [https://dev.mapping.team](https://dev.mapping.team). 
 
-0. clone this repository `git@github.com:thadk/osm-teams-python-example.git; cd osm-teams-python-example.git`
+0. clone this repository `git clone git@github.com:thadk/osm-teams-python-example.git; cd osm-teams-python-example`
 1. `python3 -m  venv flask_venv` to create a new python venv environment.
 2. `. flask_venv/bin/activate` to enter the environment
 3. `pip install -r requirements.txt`
@@ -17,3 +19,7 @@ This example will use the app credentials you provide. For the users of this dem
 9. Try out your app using your Heroku address. It should look something like the on at [https://polar-island-94689.herokuapp.com/](https://polar-island-94689.herokuapp.com/)
 
 An unfinished Django example is available on the Django_example branch, ready to follow the instructions with the loginpass library to use it. https://github.com/thadk/osm-teams-python-example/tree/django_example . The Loginpass example app may also be helpful: https://github.com/authlib/loginpass/tree/master/django_example
+
+See also:
+* https://mapping-team-starter.glitch.me/ 
+* https://github.com/developmentseed/osm-teams-node-example
