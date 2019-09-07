@@ -14,4 +14,6 @@ This example will use the app credentials you provide. For the users of this dem
 4. Create a new internet testing app at [https://dev.mapping.team](https://dev.mapping.team) and keep the secret and ID information somewhere safe that you get when you create it. You should use `https://yourherokudomain.herokuapp.com/mappingteam/auth` as the callback address, updating the domain as needed to match the app you just created.
 7. `heroku config:set MAPPINGTEAM_CLIENT_ID= MAPPINGTEAM_CLIENT_SECRET=`, entering in the Client ID and Secret you just got for your internet testing app.
 8. `git push heroku master`
-9. Try out your app using your Heroku address. It should look something like the on at [https://polar-island-94689.herokuapp.com/](https://polar-island-94689.herokuapp.com/)
+9. Try out your app using your Heroku address. It should look something like the on at [https://polar-island-94689.herokuapp.com/](https://polar-island-94689.herokuapp.com/)A
+
+An unfinished Django example is available on the Django_example branch, ready to follow the instructions with the loginpass library to use it. https://github.com/thadk/osm-teams-python-example/tree/django_example . The Loginpass example app may also be helpful: https://github.com/authlib/loginpass/tree/master/django_example
