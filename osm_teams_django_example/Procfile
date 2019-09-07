@@ -1,0 +1,1 @@
+web: gunicorn osm_teams_django_example.wsgi  --pythonpath django_example 
